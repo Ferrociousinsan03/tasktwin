@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TASKTWIN — practise workplace conversations in a safe, AI-inspired training demo." />
+  <title>TASKTWIN — Workplace Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="TASKTWIN home">
+      <span class="brand-mark">T</span><span>TASK<span class="brand-light">TWIN</span></span>
+    </a>
+    <nav>
+      <a href="#how-it-works">How it works</a>
+      <a href="#practice">Try a demo</a>
+    </nav>
+    <a class="top-cta" href="#practice">Start practising <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> WORKPLACE SKILLS, PRACTISED</div>
+        <h1>Build confidence<br>before <em>day one.</em></h1>
+        <p class="hero-text">Real-world conversations can be challenging. Practise them in a safe space, learn from every response, and show up ready.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#practice">Try the interactive demo <span>→</span></a>
+          <a class="text-link" href="#how-it-works">Explore the process</a>
+        </div>
+        <div class="hero-note"><span class="check">✓</span> No pressure. Just practice, feedback and progress.</div>
+      </div>
+
+      <div class="hero-visual" aria-label="Preview of a workplace conversation">
+        <div class="visual-glow"></div>
+        <div class="preview-card">
+          <div class="preview-head">
+            <span class="live-dot"></span> LIVE SCENARIO
+            <span class="preview-time">02:14</span>
+          </div>
+          <div class="customer-row">
+            <div class="avatar">JM</div>
+            <div>
+              <strong>Jordan Miller</strong>
+              <small>Customer · Order #2841</small>
+            </div>
+            <span class="mood">Frustrated</span>
+          </div>
+          <div class="message customer-message">“I've been waiting for my order for a week. Nobody has given me a clear update. This is really disappointing.”</div>
+          <div class="reply-label">YOUR RESPONSE</div>
+          <div class="message reply-message">I’m sorry for the delay. I’ll check the order status and help you with the next steps.</div>
+          <div class="preview-footer">
+            <span>● Communication</span>
+            <span>● Empathy</span>
+            <span>● Problem solving</span>
+          </div>
+        </div>
+
+        <div class="floating-score">
+          <span class="score-icon">✦</span>
+          <div>
+            <strong>Good progress</strong>
+            <small>Feedback after every attempt</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>01</strong><span>Choose a scenario</span></div>
+      <div><strong>02</strong><span>Respond naturally</span></div>
+      <div><strong>03</strong><span>Learn and improve</span></div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="section-heading">
+        <div class="eyebrow">A BETTER WAY TO PREPARE</div>
+        <h2>Practice makes progress.</h2>
+        <p>Short, guided simulations help turn workplace theory into practical confidence.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step-card">
+          <span class="step-number">01</span>
+          <div class="step-icon">▣</div>
+          <h3>Pick a situation</h3>
+          <p>Start with a realistic workplace scenario designed around a skill you want to build.</p>
+        </article>
+
+        <article class="step-card featured-step">
+          <span class="step-number">02</span>
+          <div class="step-icon">↗</div>
+          <h3>Have the conversation</h3>
+          <p>Think through your response and practise handling the situation at your own pace.</p>
+        </article>
+
+        <article class="step-card">
+          <span class="step-number">03</span>
+          <div class="step-icon">✦</div>
+          <h3>Get useful feedback</h3>
+          <p>Review a sample score, identify what went well and see where you can improve.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="practice-section" id="practice">
+      <div class="practice-intro">
+        <div class="eyebrow">INTERACTIVE CONCEPT DEMO</div>
+        <h2>Your next conversation<br>starts here.</h2>
+        <p>This demo uses a sample scenario and illustrative feedback to show the intended TASKTWIN experience.</p>
+        <div class="scenario-meta">
+          <span>⏱ 3–5 minutes</span>
+          <span>◈ Customer service</span>
+          <span>◉ Beginner</span>
+        </div>
+      </div>
+
+      <div class="practice-card">
+        <div class="practice-card-top">
+          <div>
+            <span class="scenario-tag">SCENARIO 01</span>
+            <h3>Handle a delayed order</h3>
+          </div>
+          <span class="status-pill">Ready to practise</span>
+        </div>
+
+        <div class="customer-prompt">
+          <div class="avatar avatar-small">JM</div>
+          <div>
+            <strong>Jordan Miller <span>· Customer</span></strong>
+            <p>“My order was supposed to arrive last week. I've contacted support twice and still don't have an answer. What are you going to do about it?”</p>
+          </div>
+        </div>
+
+        <label for="response">HOW WOULD YOU RESPOND?</label>
+        <textarea
+          id="response"
+          rows="4"
+          maxlength="500"
+          placeholder="Type your response here... For example, acknowledge the concern, show empathy and explain what you'll do next."
+        ></textarea>
+
+        <div class="form-bottom">
+          <span id="char-count">0 / 500</span>
+          <button class="button button-primary" id="submit-response">
+            Submit response <span>→</span>
+          </button>
+        </div>
+
+        <p class="demo-disclaimer">Concept demo · Feedback is pre-written sample content, not generated by AI.</p>
+
+        <div class="feedback" id="feedback" aria-live="polite" hidden>
+          <div class="feedback-head">
+            <div>
+              <span class="eyebrow">SAMPLE PERFORMANCE REVIEW</span>
+              <h3>Your practice summary</h3>
+            </div>
+            <div class="score">
+              <strong id="score-value">82</strong>
+              <span>/ 100</span>
+            </div>
+          </div>
+
+          <div class="score-track"><span></span></div>
+
+          <p class="feedback-summary" id="feedback-summary">You acknowledged the customer's frustration and offered a next step.</p>
+
+          <div class="feedback-grid">
+            <div>
+              <span class="positive">✓</span>
+              <strong>What went well</strong>
+              <p>Empathetic tone and willingness to take ownership.</p>
+            </div>
+            <div>
+              <span class="improve">↗</span>
+              <strong>Try improving</strong>
+              <p>Give a specific action and a clear time for the next update.</p>
+            </div>
+          </div>
+
+          <button class="text-button" id="try-again">Try another response ↻</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div>
+        <div class="eyebrow">THE TASKTWIN APPROACH</div>
+        <h2>Practise today.<br><em>Perform better tomorrow.</em></h2>
+      </div>
+      <a class="button button-light" href="#practice">Try the demo <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#">
+      <span class="brand-mark">T</span>
+      <span>TASK<span class="brand-light">TWIN</span></span>
+    </a>
+    <span>Early concept demo · Built for wHACKiest 2026</span>
+    <span>Practise. Interact. Improve.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
